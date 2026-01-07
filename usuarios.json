@@ -1,0 +1,4 @@
+{
+  "prof1": { "senha": "1234", "papel": "professor" },
+  "aluno1": { "senha": "abcd", "papel": "aluno" }
+}
