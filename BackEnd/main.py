@@ -8,8 +8,9 @@ import json
 import os
 
 client = OpenAI(
-   openai.api_key= os.getenv("OPENAI_API_KEY")
+   api_key= os.getenv("OPENAI_API_KEY")
 )
+
 
 app = FastAPI(title="TECSYRA API", version="2.0")
 
