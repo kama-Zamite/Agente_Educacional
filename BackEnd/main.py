@@ -17,7 +17,7 @@ app = FastAPI(title="TECSYRA API", version="2.0")
 # CORS para React local
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=["http://localhost:5173"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -92,6 +92,9 @@ def calcular_media_final(historico):
     return {m: round(soma[m] / contagem[m], 2) for m in soma}
 
 # ----------------- ENDPOINTS -----------------
+@app.get("/")
+def root():
+    return {"status": "API rodando"}
 @app.post("/login/{papel}")
 def login(papel: str, dados: LoginDados):
     autenticar(dados.usuario, dados.senha, papel)

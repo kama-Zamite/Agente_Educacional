@@ -8,7 +8,7 @@ export default function App() {
   const [papel, setPapel] = useState(""); // "professor" ou "aluno"
 
   return (
-    <div style={{ padding: "20px", fontFamily: "Arial" }}>
+    <div style={{fontFamily: "Arial" }}>
       {!usuario ? (
         <Login setUsuario={setUsuario} setPapel={setPapel} />
       ) : papel === "professor" ? (

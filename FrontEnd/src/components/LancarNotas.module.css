@@ -1,0 +1,119 @@
+.cardLancarNotas {
+  min-height: 100vh;
+  padding: 40px;
+  background-color: #f4f6f8;
+  font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+.titulo {
+  margin-bottom: 25px;
+  color: #1f2933;
+  font-size: 26px;
+}
+
+/* ---------- HEADER ---------- */
+
+.header {
+  background: linear-gradient(135deg, #ffffff, #f1f3f6);
+  border: 1px solid #dcdfe4;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 30px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.field label {
+  font-size: 14px;
+  color: #374151;
+  font-weight: 600;
+}
+
+.field input,
+.field select {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  font-size: 14px;
+  outline: none;
+}
+
+.field input:focus,
+.field select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+/* ---------- DISCIPLINAS ---------- */
+
+.disciplinasWrapper {
+  max-width: 500px;
+  margin-bottom: 25px;
+}
+
+.disciplina {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.disciplina label {
+  font-size: 15px;
+  color: #111827;
+}
+
+.disciplina input {
+  width: 70px;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  text-align: center;
+}
+
+/* ---------- BOTÃO ---------- */
+
+.btnNotas {
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 26px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.btnNotas:hover {
+  background-color: #1e40af;
+  transform: translateY(-1px);
+}
+
+/* ---------- FEEDBACK ---------- */
+
+.error {
+  margin-top: 15px;
+  color: #dc2626;
+  font-weight: 500;
+}
+
+.resultado {
+  margin-top: 30px;
+  background-color: #111827;
+  color: #e5e7eb;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 13px;
+  max-width: 900px;
+  overflow-x: auto;
+}
